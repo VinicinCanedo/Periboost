@@ -1,0 +1,19 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.LoginBox{
+    width: 60%;
+    height: 850px;
+    background-color: #4e586093;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    border-radius: 2%;
+    gap: 25px;
+}
+

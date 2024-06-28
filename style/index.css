@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#BackGround{
+    min-width: 100%;
+    min-height: 961px;
+    
+}
+
+
+
+.brands {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 100vw;
+    height: 500px;
+}
+
+.brands .text-brands {
+    color: white;
+    font-size: 25px;
+}
+
+.brands .cards-brands {
+    display: flex;
+    gap: 80px;
+    margin-top: 5rem;
+}
+
+.brands .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands .cards-brands .card .img-card-brands {
+    width: 270px;
+}
+
+#logo-corsair {
+    filter: invert(100%);
+}
+
+.brands .cards-brands .card {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #15151B;
+    padding: 5px 30px;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-pc { 
+    display: flex;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.card-pc {
+    background-color: #4e586093;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 14px;
+    width: 260px;
+    height:425px ;
+}
+
+.img-card-pc {
+    margin-top: -50px;
+    margin-bottom: 15px;
+    width: 180px;
+}
+
+.info-pc {
+    color: #fff;
+    font-size: 18px;
+}
+
+.price-pc {
+    color: #FFB321;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.total-price, .installments-price {
+    font-size: 18px;
+}
+
+
+
+/* Neon nos Card */
+.card,
+.card-pc {
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: #00f;
+  box-shadow: 0 0 5px rgb(57, 57, 196);
+}
+
+.card-pc:hover {
+  border-color: #00f;
+  box-shadow: 0 0 5px rgb(57, 57, 196);
+}
+
+.card::before,
+.card::after,
+.card-pc::before,
+.card-pc::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card-pc:hover::before,
+.card-pc:hover::after {
+  opacity: 1;
+}
+
+.card-pc::before,
+.card-pc::after {
+  border: 2px solid transparent;
+}
+
+.card-pc::after {
+  animation: none;
+}
+
+@media screen and (max-width:800px) {
+    #BackGround{
+        min-width: 100%;
+        min-height: 350px;
+    }
+    
+}
+
+
+  
+  @keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 5px #00f, 0 0 20px #00f;
+    }
+    
+    100% {
+      box-shadow: 0 0 20px #00f, 0 0 50px #00f;
+    }
+  }
+
+  
+
+@media screen and (max-width: 800px){
+    .cards-brands{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .cards-pc { 
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+  }
+
+}
+
+
+

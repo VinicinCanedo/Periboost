@@ -1,0 +1,58 @@
+
+.card,
+.card-pc {
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgb(153, 138, 0);
+  box-shadow: 0 0 5px rgb(145, 134, 38);
+}
+
+.card-pc:hover {
+  border-color: rgb(153, 138, 0);
+  box-shadow: 0 0 5px  rgb(153, 138, 0);
+}
+
+.card::before,
+.card::after,
+.card-pc::before,
+.card-pc::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card-pc:hover::before,
+.card-pc:hover::after {
+  opacity: 1;
+}
+
+.card-pc::before,
+.card-pc::after {
+  border: 2px solid transparent;
+}
+
+.card-pc::after {
+  animation: none;
+}
+
+@keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 5px rgb(153, 138, 0), 0 0 20px rgb(153, 138, 0);
+    }
+    
+    100% {
+      box-shadow: 0 0 20px rgb(153, 138, 0), 0 0 50px rgb(153, 138, 0);
+    }
+  }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/bootstrap.css">
+    <link rel="stylesheet" href="../style/geral.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="shortcut icon" href="../images/Periboost-removebg-preview.png" type="image/x-icon">
+    <title>cadastro</title>
+</head>
+<body>
+    <header class="hiden">
+        
+        <nav>
+            <ul>
+                <div id="Logo">
+                    <a href="../index.html">
+                        <img src="../images/Periboost-removebg-preview.png" width="100%" alt="">
+                    </a>
+                </div>
+            </ul>
+            <ul>
+                <input type="text" class="search" placeholder="Pesquise">
+            </ul>
+            <ul>
+                <li> <a href="../index.html">Início</a> </li>
+                <li> <a href="../pages/produtos.html">Produtos</a> </li>
+                <li> <a href="../pages/promotions.html">Promoções</a> </li>
+            </ul>
+                <form action="#">
+                  <li class="navbar-item"><button type="button" class="btn btn-outline-light">Login</button></li>  
+                </form> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="LoginBox">
+            <div class="Campos">
+                <h1 style="padding-top: 20px;">Cadastre-se</h1>
+                    <br>
+                    <form action="login.html">
+                        <!-- Nome -->
+                        <label for="nome"><h3>Nome</h3></label><br>
+                        <input type="text" class="CamposInserir" placeholder="Insira aqui seu Nome" required>
+                        <br>
+                        <br>
+                        <!-- Sobrenome -->
+                        <label for="nome"><h3>Sobrenome</h3></label><br>
+                        <input type="text" class="CamposInserir" placeholder="Insira aqui seu Sobrenome" required>
+                        <br>
+                        <br>
+                        <!-- Data Nascimento -->
+                        <label for="data"><h3>Data de Nascimento</h3></label><br>
+                        <input type="date" class="CamposInserir" placeholder="dia/mês/ano" required>
+                        <br>
+                        <br>
+                        <!-- E-MAIL -->
+                        <label for="email"><h3>E-mail</h3></label><br>
+                        <input type="email" class="CamposInserir" placeholder="Insira aqui seu E-mail" required>
+                        <br>
+                        <br>
+                        <!-- Senha -->
+                        <label for="senha"><h3>Senha</h3></label><br>
+                        <input type="password" class="CamposInserir" placeholder="Insira aqui sua Senha" required>
+                        <br>
+                        <br>
+                        <!-- Confirmar Senha -->
+                        <label for="senha"><h3>Confirmar Senha</h3></label><br>
+                        <input type="password" class="CamposInserir" placeholder="Confirme aqui sua Senha" required>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- Enviar --> 
+                        <a href="login.html">
+                           <button type="button" class="btn btn-outline-light">Enviar</button>
+                        </a>
+                        <br>
+                        <br>
+            </div>
+        </div> 
+    </main>
+
+    <footer style="text-align: center;">
+        <div class="container-fluid m-0 p-0 row">
+
+            <div class="container col-6">
+                <br>
+                <div id="SocialMedia1">
+                    <img src="../images/instagram_logo.png" alt="" id="Instagram">
+                    <p class="h5"><a href="#">@Periboost</a></p>
+                </div>
+                <div id="SocialMedia2">
+                    <img src="../images/facebook_logo.png" alt="" id="Facebook">
+                    <p class="h5"><a href="#">@Periboost</a></p>
+                </div>
+            </div>
+            <div class="container col-6">
+                <br>
+                <p class="h5"><a href="#">Fale Conosco</a></p>
+                <p class="h5"><a href="#">Sobre nós</a></p>
+                <p class="h5"><a href="#">E-mail</a></p>
+                <p class="h5"><a href="#">Telefone</a></p>
+            </div>
+            <P>All the Rights Reserved by @PeriBoost</P>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>      
+</body>
+</html>
